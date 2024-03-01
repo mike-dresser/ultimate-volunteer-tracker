@@ -1,0 +1,260 @@
+{
+    "users" : [
+        {
+           "name" : "Collin Bartoldus",
+           "pronouns" : "(he/him)",
+           "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/OV4yymnwI5/s-340-340/collin-1.jpg",
+           "role" : "Director of Operations",
+           "email" : "ops@discny.org",
+           "id" : 1,
+           "pointEntries" : [
+            {
+                "date" : "",
+                "event" : "",
+                "volunteerRole" : "",
+                "points" : ""
+            }
+           ]
+        },
+        {
+            "name" : "Ryan Delaney",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/E3YssCZyhb/s-240-240/delaney.png",
+            "role" : "NYC Programs Coordinator",
+            "email" : "pc@discny.org",
+            "id" : 2,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "RJ Marchesi",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/6A4LHK1zdP/s-271-271/rj-1.jpg",
+            "role" : "Bookkeeper",
+            "email" : "treasurer@discny.org",
+            "id" : 3,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Steve Estes",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/GteOnST1mC/s-263-263/steve.png",
+            "role" : "Field Operations",
+            "email" : "fields@discny.org",
+            "id" : 4,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Sam Harris",
+            "pronouns" : "(they/them)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/6mJsKWuQ7Z/s-497-512/sam.png",
+            "role" : "Youth Programs Administrator",
+            "email" : "youth@discny.org",
+            "id" : 5,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Lily Eisner",
+            "pronouns" : "(she/her)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/DTYXesflVu/s-424-424/lily.png",
+            "role" : "TRY U Lead & Coach Coordinator",
+            "email" : "tryu@discny.org",
+            "id" : 6,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Sydney Friedman",
+            "pronouns" : "(they/them)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/CHAczzrKJr/s-491-512/syd.jpg",
+            "role" : "HSL Commissioner",
+            "email" : "hsleague@discny.org",
+            "id" : 7,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Nadith Dharmasena",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/MvOIs6xRW8/s-512-512/nadith.png",
+            "role" : "HSL Deputy Commissioner",
+            "email" : "hsleague@discny.org",
+            "id" : 8,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Malcolm Baker",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/53YARJcPPR/s-1170-1170/image0.jpg",
+            "role" : "MSL Commissioner",
+            "email" : "msleague@discny.org",
+            "id" : 9,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Brittany Kaplan",
+            "pronouns" : "(she/her)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/7KBFupz7J4/s-846-1170/img-9107-2-1.jpg",
+            "role" : "President",
+            "email" : "bkaplan@discny.org",
+            "id" : 10,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Matthew McLaughlin",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/zp39P7dESo/s-113-133/matt-2.png",
+            "role" : "Treasurer",
+            "email" : "mmclaughlin@discny.org",
+            "id" : 11,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Zachary Saffa",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/Tj0wlhwppq/s-969-1170/zach.jpg",
+            "role" : "Secretary",
+            "email" : "zsaffa@discny.org",
+            "id" : 12,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Otto Gomez",
+            "pronouns" : "(he/him)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/g1OKQLCp6F/s-120-133/otto.png",
+            "role" : "At-Large",
+            "email" : "ogomez@discny.org",
+            "id" : 13,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Ruthie Tabatchnick",
+            "pronouns" : "(she/her)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/A2OuOYcr3W/s-878-1170/ruthie-1.jpg",
+            "role" : "At-Large",
+            "email" : "ruthietab@discny.org",
+            "id" : 14,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Kyla Dayer",
+            "pronouns" : "(she/her)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/oNGMzAqmS6/s-306-424/kyla-1.jpg",
+            "role" : "At-Large",
+            "email" : "kdayer@discny.org",
+            "id" : 15,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         },
+         {
+            "name" : "Shannon Duffy",
+            "pronouns" : "(she/her)",
+            "image" : "https://d36m266ykvepgv.cloudfront.net/uploads/media/ftMhgNNaM7/s-265-341/shannon-3.png",
+            "role" : "At-Large",
+            "email" : "sduffy@discny.org",
+            "id" : 16,
+            "pointEntries" : [
+             {
+                 "date" : "",
+                 "event" : "",
+                 "volunteerRole" : "",
+                 "points" : ""
+             }
+            ]
+         }
+    ]
+}
