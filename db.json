@@ -9,10 +9,16 @@
            "id" : 1,
            "pointEntries" : [
             {
-                "date" : "",
-                "event" : "",
-                "volunteerRole" : "",
-                "points" : ""
+                "date" : "N/A",
+                "event" : "N/A",
+                "volunteerRole" : "Director of Operations",
+                "points" : 50
+            },            
+            {
+                "date" : "03/27",
+                "event" : "New York Warm-Up",
+                "volunteerRole" : "Tournament Director",
+                "points" : 5
             }
            ]
         },
@@ -24,11 +30,17 @@
             "email" : "pc@discny.org",
             "id" : 2,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                {
+                    "date" : "N/A",
+                    "event" : "N/A",
+                    "volunteerRole" : "NYC Programs Coordinator",
+                    "points" : 30
+                }, 
+                {
+                 "date" : "01/26",
+                 "event" : "Indoor Beach 2024 - League",
+                 "volunteerRole" : "Commissioner",
+                 "points" : 20
              }
             ]
          },
@@ -40,11 +52,17 @@
             "email" : "treasurer@discny.org",
             "id" : 3,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                {
+                    "date" : "N/A",
+                    "event" : "N/A",
+                    "volunteerRole" : "Bookkeeper",
+                    "points" : 30
+                },
+                {
+                 "date" : "01/25",
+                 "event" : "DiscNY High School League 2024",
+                 "volunteerRole" : "Chaperone",
+                 "points" : 10
              }
             ]
          },
@@ -56,11 +74,17 @@
             "email" : "fields@discny.org",
             "id" : 4,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                {
+                    "date" : "02/26",
+                    "event" : "DiscNY Middle School League 2024",
+                    "volunteerRole" : "Field Operations",
+                    "points" : 15
+                },
+                {
+                 "date" : "02/26",
+                 "event" : "DiscNY High School League 2024",
+                 "volunteerRole" : "Field Operations",
+                 "points" : 15
              }
             ]
          },
@@ -73,11 +97,17 @@
             "id" : 5,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                 "date" : "3/14",
+                 "event" : "DiscNY High School League 2024",
+                 "volunteerRole" : "Admin",
+                 "points" : 30
+             },
+             {
+                "date" : "4/20",
+                "event" : "TRY U Community Travel Team",
+                "volunteerRole" : "Organizer",
+                "points" : 20
+            }
             ]
          },
          {
@@ -88,12 +118,12 @@
             "email" : "tryu@discny.org",
             "id" : 6,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+            {
+                "date" : "4/20",
+                "event" : "TRY U Community Travel Team",
+                "volunteerRole" : "Organizer",
+                "points" : 20
+            }
             ]
          },
          {
@@ -105,11 +135,29 @@
             "id" : 7,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                "date" : "3/14",
+                "event" : "DiscNY High School League 2024",
+                "volunteerRole" : "Commissioner",
+                "points" : 30
+             },
+            {
+                 "date" : "1/15",
+                 "event" : "DiscNY Winter League",
+                 "volunteerRole" : "Commissioner",
+                 "points" : 20
+             },
+             {
+                "date" : "10/07",
+                "event" : "DiscNY Fall League",
+                "volunteerRole" : "Commissioner",
+                "points" : 20
+            },
+            {
+                "date" : "4/20",
+                "event" : "TRY U Community Travel Team",
+                "volunteerRole" : "Coach",
+                "points" : 10
+            }
             ]
          },
          {
@@ -121,10 +169,10 @@
             "id" : 8,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                "date" : "3/14",
+                "event" : "DiscNY High School League 2024",
+                "volunteerRole" : "Deputy Commissioner",
+                "points" : 30
              }
             ]
          },
@@ -137,10 +185,10 @@
             "id" : 9,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                 "date" : "3/14",
+                 "event" : "Middle School League",
+                 "volunteerRole" : "Commissioner",
+                 "points" : 30
              }
             ]
          },
@@ -152,12 +200,42 @@
             "email" : "bkaplan@discny.org",
             "id" : 10,
             "pointEntries" : [
+                {
+                    "date" : "N/A",
+                    "event" : "N/A",
+                    "volunteerRole" : "President",
+                    "points" : 50
+                },
+                {
+                 "date" : "10/07",
+                 "event" : "DiscNY Fall League",
+                 "volunteerRole" : "Commissioner",
+                 "points" : 20
+             },
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                "date" : "01/15",
+                "event" : "DiscNY Winter League",
+                "volunteerRole" : "Commissioner",
+                "points" : 20
+            },
+            {
+                "date" : "10/07",
+                "event" : "NYC Thanks-GIVING Hat",
+                "volunteerRole" : "Tournament Organizer",
+                "points" : 10
+            },
+            {
+                "date" : "10/07",
+                "event" : "DiscNY League/Pickup",
+                "volunteerRole" : "Tournament Organizer",
+                "points" : 10
+            },
+            {
+                "date" : "4/20",
+                "event" : "TRY U Community Travel Team",
+                "volunteerRole" : "Coach",
+                "points" : 10
+            }
             ]
          },
          {
@@ -169,10 +247,10 @@
             "id" : 11,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                 "date" : "N/A",
+                 "event" : "N/A",
+                 "volunteerRole" : "Treasurer",
+                 "points" : 15
              }
             ]
          },
@@ -185,10 +263,10 @@
             "id" : 12,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                 "date" : "N/A",
+                 "event" : "N/A",
+                 "volunteerRole" : "Secretary",
+                 "points" : 30
              }
             ]
          },
@@ -201,11 +279,17 @@
             "id" : 13,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                 "date" : "N/A",
+                 "event" : "N/A",
+                 "volunteerRole" : "At-Large",
+                 "points" : 15
+             },
+             {
+                "date" : "03/15",
+                "event" : "Brooklyn Spring League 2024",
+                "volunteerRole" : "Commissioner",
+                "points" : 20
+            }
             ]
          },
          {
@@ -216,12 +300,18 @@
             "email" : "ruthietab@discny.org",
             "id" : 14,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                {
+                    "date" : "N/A",
+                    "event" : "N/A",
+                    "volunteerRole" : "At-Large",
+                    "points" : 15
+                },
+                {
+                   "date" : "03/15",
+                   "event" : "Brooklyn Spring League 2024",
+                   "volunteerRole" : "Commissioner",
+                   "points" : 20
+               }
             ]
          },
          {
@@ -232,12 +322,18 @@
             "email" : "kdayer@discny.org",
             "id" : 15,
             "pointEntries" : [
-             {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
-             }
+                {
+                    "date" : "N/A",
+                    "event" : "N/A",
+                    "volunteerRole" : "At-Large",
+                    "points" : 15
+                },
+                {
+                   "date" : "03/15",
+                   "event" : "McCarren Mondays Fall 2015",
+                   "volunteerRole" : "Commissioner",
+                   "points" : 20
+               }
             ]
          },
          {
@@ -249,10 +345,10 @@
             "id" : 16,
             "pointEntries" : [
              {
-                 "date" : "",
-                 "event" : "",
-                 "volunteerRole" : "",
-                 "points" : ""
+                 "date" : "N/A",
+                 "event" : "N/A",
+                 "volunteerRole" : "At-Large",
+                 "points" : 15
              }
             ]
          }
