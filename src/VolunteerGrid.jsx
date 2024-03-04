@@ -4,7 +4,11 @@ import { useOutletContext } from 'react-router-dom'
 
 function VolunteerGrid() {
 
-    const [searchedVolunteers, setVolunteers] = useOutletContext()
+
+  const [searchedVolunteers, setVolunteers] = useOutletContext()
+  
+
+    
 
   return (
     <div className="volunteerGrid">

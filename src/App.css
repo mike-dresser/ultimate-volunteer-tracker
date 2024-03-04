@@ -84,3 +84,27 @@ img {
   font-size: 2em;
   font-weight: 700;
 }
+
+.newVolunteer {
+  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+text-align: center;
+}
+
+.newVolunteer form {
+  border: 1px solid hotpink;
+  width: 40%;
+  text-align: right;
+  margin: auto;
+}
+
+.newVolunteer input {
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.newVolunteer button {
+  margin: auto;
+  display: block;
+}

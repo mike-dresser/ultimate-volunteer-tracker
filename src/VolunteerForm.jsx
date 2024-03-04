@@ -32,37 +32,46 @@ function VolunteerForm() {
      
 
   return (
-    <div>
+    <div className='newVolunteer'>
       <h1>New Volunteer</h1>
       <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Enter Full Name: </label>
         <input
           type="text" 
           name="name" 
-          placeholder="Volunteer Name" 
+          placeholder="Johnny Disc" 
           value={newVolunteer.name} 
           onChange={(e)=>setNewVolunteer({...newVolunteer, name: e.target.value})}>
         </input>
+        <br></br>
+        <label htmlFor="pronouns">Enter Pronouns: </label>
         <input
           type="text" 
           name="pronouns" 
-          placeholder="(Pronouns)" 
+          placeholder="(They/Them)" 
           value={newVolunteer.pronouns} 
           onChange={(e)=>setNewVolunteer({...newVolunteer, pronouns: e.target.value})}>
         </input>
+        <br></br>
+        <label htmlFor="role">Enter Org Role: </label>
         <input
           type="text" 
           name="role" 
-          placeholder="Role" 
+          placeholder="General" 
           value={newVolunteer.role} 
           onChange={(e)=>setNewVolunteer({...newVolunteer, role: e.target.value})}>
         </input>
+        <br></br>
+        <label htmlFor="email">Enter Email: </label>
         <input
           type="text" 
           name="email" 
-          placeholder="Email" 
+          placeholder="johnny.disc@discny.org" 
           value={newVolunteer.email} 
           onChange={(e)=>setNewVolunteer({...newVolunteer, email: e.target.value})}>
         </input>
+        <br></br>
+        <label htmlFor="image">Enter Image URL: </label>
         <input
           type="text" 
           name="image" 
@@ -70,6 +79,7 @@ function VolunteerForm() {
           value={newVolunteer.image} 
           onChange={(e)=>setNewVolunteer({...newVolunteer, image: e.target.value})}>
         </input>
+        <br></br>
         <button type="submit">Add Volunteer</button>
       </form>
     </div>

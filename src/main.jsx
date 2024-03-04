@@ -17,7 +17,7 @@ function Main() {
       path: '/',
       element: <App />,
       children: [
-        { path: '/volunteer_form', element: <VolunteerForm /> },
+        { path: '/form', element: <VolunteerForm /> },
         { path: '/volunteer/:id', element: <VolunteerDetails /> },
         { path: '/', element: <VolunteerGrid />}
       ],
