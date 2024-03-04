@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <Header />
+
       <Search search={search} setSearch={setSearch}/>
+
       <Outlet />
     </>
   );
