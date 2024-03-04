@@ -6,11 +6,16 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0);
+  const [search, setSearch] = useState("");
+
+  let searchedVolunteers = volunteers.filter((volunteer)=>volunteer.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
     <>
       <Header />
-      {/* <Search /> */}
+
+      <Search search={search} setSearch={setSearch}/>
+
       <Outlet />
     </>
   );
