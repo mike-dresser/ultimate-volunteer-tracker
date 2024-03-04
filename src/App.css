@@ -19,3 +19,33 @@ header {
   border-radius: 5px;
   padding: 0 5px;
 }
+
+.volunteerDetails {
+  margin: auto;
+  width: 50vw;
+  height: 80vh;
+  overflow: scroll;
+  padding: 1em;
+  border: 1px solid darkgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+.points {
+  align-self: end;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
