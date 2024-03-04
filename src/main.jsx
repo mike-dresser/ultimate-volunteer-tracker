@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import VolunteerForm from './VolunteerForm.jsx';
 import VolunteerDetails from './VolunteerDetails.jsx';
+import VolunteerGrid from './VolunteerGrid.jsx';
 
 function Main() {
   const routes = createBrowserRouter([
@@ -18,6 +19,7 @@ function Main() {
       children: [
         { path: '/volunteer_form', element: <VolunteerForm /> },
         { path: '/volunteer/:id', element: <VolunteerDetails /> },
+        { path: '/', element: <VolunteerGrid />}
       ],
     },
     ,
