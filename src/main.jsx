@@ -2,15 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useOutlet,
+} from 'react-router-dom';
 import VolunteerForm from './VolunteerForm.jsx';
+import VolunteerDetails from './VolunteerDetails.jsx';
 
 function Main() {
   const routes = createBrowserRouter([
     {
       path: '/',
       element: <App />,
-      children: [{ path: '/volunteer_form', element: <VolunteerForm /> }],
+      children: [
+        { path: '/volunteer_form', element: <VolunteerForm /> },
+        { path: '/volunteer/:id', element: <VolunteerDetails /> },
+      ],
     },
     ,
   ]);
