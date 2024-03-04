@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Header.jsx';
 import Search from './Search.jsx';
+import Footer from './Footer.jsx';
 import { Outlet } from 'react-router-dom';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
       <Search search={search} setSearch={setSearch}/>
       <Outlet context={[searchedVolunteers, setVolunteers]} />
+      <Footer />
     </>
   );
 }
