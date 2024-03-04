@@ -49,3 +49,38 @@ td {
 tr:nth-child(even) {
   background-color: #eee;
 }
+
+.volunteerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  height: 80vh;
+  border: 1px solid black;
+  gap: 10px;
+  margin: auto;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+.volunteerCard {
+  width: 20vw;
+  background-color: rgba(0, 30, 255, 0.117);
+  padding: 5px;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.imageFrame {
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+.score {
+  text-align: right;
+  font-size: 2em;
+  font-weight: 700;
+}

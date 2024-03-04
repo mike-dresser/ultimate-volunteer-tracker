@@ -7,9 +7,9 @@ function VolunteerGrid() {
     const [searchedVolunteers, setVolunteers] = useOutletContext()
 
   return (
-    <>
-      <ul>{searchedVolunteers.map((volunteer)=> <VolunteerCard key={volunteer.id} volunteer={volunteer}/>)}</ul>
-    </>
+    <div className="volunteerGrid">
+      {searchedVolunteers.map((volunteer)=> <VolunteerCard key={volunteer.id} volunteer={volunteer}/>)}
+    </div>
   )
 }
 
