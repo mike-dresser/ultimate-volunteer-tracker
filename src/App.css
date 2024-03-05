@@ -33,16 +33,16 @@ footer img {
 
 .search {
   display: block;
-
   margin: 20px auto;
-  width: 50vw;
+  width: 40vw;
   height: 4vh;
-  border-radius: 5px;
   padding: 0 5px;
 }
 
 .search input {
-  width: 30vw;
+  border-radius: 10px;
+  border: 2px solid darkgray;
+  width: 100%;
   height: 3vh;
   margin-right: 15px;
 }
@@ -177,17 +177,6 @@ img {
 .newVolunteer button {
   margin: auto;
   display: block;
-}
-
-#html-background-image {
-  /* will-change: transform;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover; */
 }
 
 .landingText {

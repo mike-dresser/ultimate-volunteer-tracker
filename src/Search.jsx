@@ -1,19 +1,14 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom'
 
-function Search({search, setSearch}) {
-
-  const navigate = useNavigate()
-    
-
+function Search({ search, setSearch }) {
   return (
     <div className="search">
-      <input 
-      type="text" 
-      placeholder="Search Volunteers" 
-      value={search}
-      onChange={(e)=>setSearch(e.target.value)} />
-      <button onClick={()=>navigate("./form")}>Add New Volunteer</button>
+      <input
+        type="text"
+        placeholder="Search Volunteers"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
     </div>
   );
 }

@@ -10,7 +10,7 @@ function App() {
     <>
       <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
 
-      <Outlet />
+      <Outlet context={[loggedIn, setLoggedIn]} />
       <Footer />
     </>
   );

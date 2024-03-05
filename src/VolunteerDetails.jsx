@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import PointEntriesForm from './PointEntriesForm';
+import { useOutletContext } from 'react-router-dom';
 
 function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
-  console.log(volunteerDetail);
+  const [loggedIn, setLoggedIn] = useOutletContext();
   const { name, pronouns, image, role, email } = volunteerDetail;
   const [pointEntries, setPointEntries] = useState(
     volunteerDetail.pointEntries
@@ -31,10 +32,12 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
                 </tr>
               );
             })}
-            <PointEntriesForm
-              volunteer={volunteerDetail}
-              setPointEntries={setPointEntries}
-            />
+            {loggedIn && (
+              <PointEntriesForm
+                volunteer={volunteerDetail}
+                setPointEntries={setPointEntries}
+              />
+            )}
           </tbody>
         </table>
       </form>
