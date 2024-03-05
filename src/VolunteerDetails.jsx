@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PointEntriesForm from './PointEntriesForm';
 
-function VolunteerDetails({ volunteerDetail }) {
+function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
   console.log(volunteerDetail);
   const { name, pronouns, image, role, email } = volunteerDetail;
   const [pointEntries, setPointEntries] = useState(
     volunteerDetail.pointEntries
   );
-
-  // renderEntries(volunteerDetail.pointEntries);
 
   function renderEntries(entries) {
     return (
@@ -44,21 +42,26 @@ function VolunteerDetails({ volunteerDetail }) {
   }
 
   return (
-    <div className="volunteerDetails">
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
-      <p>
-        <em>{role}</em>
-      </p>
-      <p>{pronouns}</p>
-      <p>{email}</p>
-      <p className="points">
-        {volunteerDetail.pointEntries.reduce((total, entry) => {
-          return total + entry.points;
-        }, 0)}{' '}
-        pts
-      </p>
-      <div className="pointEntries">{renderEntries(pointEntries)}</div>
+    <div className={showDetails === -1 ? 'modal hidden' : 'modal'}>
+      <div className="volunteerDetails">
+        <span className="closeButton" onClick={() => setShowDetails(-1)}>
+          ✖️
+        </span>
+        <img src={image} alt={name} />
+        <h2>{name}</h2>
+        <p>
+          <em>{role}</em>
+        </p>
+        <p>{pronouns}</p>
+        <p>{email}</p>
+        <p className="points">
+          {volunteerDetail.pointEntries.reduce((total, entry) => {
+            return total + entry.points;
+          }, 0)}{' '}
+          pts
+        </p>
+        <div className="pointEntries">{renderEntries(pointEntries)}</div>
+      </div>
     </div>
   );
 }

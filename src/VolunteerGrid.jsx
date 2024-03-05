@@ -6,6 +6,7 @@ import VolunteerDetails from './VolunteerDetails';
 function VolunteerGrid() {
   const [search, setSearch] = useState('');
   const [volunteers, setVolunteers] = useState([]);
+  const [showDetails, setShowDetails] = useState(-1);
 
   let searchedVolunteers = volunteers.filter((volunteer) =>
     volunteer.name.toLowerCase().includes(search.toLowerCase())
@@ -22,13 +23,23 @@ function VolunteerGrid() {
       <Search search={search} setSearch={setSearch} />
       <div className="volunteerGrid">
         {searchedVolunteers.map((volunteer) => (
-          <VolunteerCard key={volunteer.id} volunteer={volunteer} />
+          <VolunteerCard
+            key={volunteer.id}
+            volunteer={volunteer}
+            setShowDetails={setShowDetails}
+          />
         ))}
       </div>
-      {volunteers.length > 0 ? (
-        <VolunteerDetails volunteerDetail={searchedVolunteers[0]} />
-      ) : (
-        <p>Loading...</p>
+      {showDetails !== -1 && (
+        <VolunteerDetails
+          showDetails={showDetails}
+          setShowDetails={setShowDetails}
+          volunteerDetail={
+            volunteers.filter((volunteer) => {
+              return volunteer.id === showDetails;
+            })[0]
+          }
+        />
       )}
     </>
   );

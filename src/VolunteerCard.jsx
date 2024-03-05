@@ -1,12 +1,11 @@
 import React from 'react';
 import VolunteerDetails from './VolunteerDetails';
 
-function VolunteerCard({ volunteer }) {
+function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
   const { name, pronouns, image, role, email, total } = volunteer;
 
-  function showCard(volunteer) {
-    console.log(volunteer);
-    return <VolunteerDetails volunteerDetail={volunteer} />;
+  function showCard(id) {
+    setShowDetails(id);
   }
 
   function pointTotal(volunteer) {
@@ -19,7 +18,7 @@ function VolunteerCard({ volunteer }) {
   pointTotal(volunteer);
 
   return (
-    <div onClick={() => showCard(volunteer)} className="volunteerCard">
+    <div onClick={() => showCard(volunteer.id)} className="volunteerCard">
       <div className="imageFrame">
         <img src={image} alt={name} />
       </div>
