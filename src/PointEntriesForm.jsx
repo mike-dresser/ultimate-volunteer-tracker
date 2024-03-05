@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function PointEntriesForm() {
+function PointEntriesForm({ volunteer, setPointEntries }) {
   const [newPointEntry, setNewPointEntry] = useState({
     date: '',
     event: '',
@@ -8,15 +8,26 @@ function PointEntriesForm() {
     points: 0,
   });
 
-  function submitNewPointEntry() {
+  function submitNewPointEntry(e) {
+    e.preventDefault();
     const updatedEntries = [...volunteer.pointEntries, newPointEntry];
-    fetch(`http://localhost:3000/users/${id}`, {
+    fetch(`http://localhost:3000/users/${volunteer.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'Application/JSON',
       },
-      body: JSON.stringify({ ...volunteer, pointEntries: updatedEntries }),
-    });
+      body: JSON.stringify({ pointEntries: updatedEntries }),
+    })
+      .then((res) => res.json())
+      .then((updatedRecord) => {
+        setPointEntries([...updatedRecord.pointEntries]);
+        setNewPointEntry({
+          date: '',
+          event: '',
+          volunteerRole: '',
+          points: 0,
+        });
+      });
   }
 
   return (
@@ -33,13 +44,26 @@ function PointEntriesForm() {
           />
         </td>
         <td>
-          <input type="text" placeholder="Event" value={newPointEntry.event} />
+          <input
+            type="text"
+            placeholder="Event"
+            value={newPointEntry.event}
+            onChange={(e) =>
+              setNewPointEntry({ ...newPointEntry, event: e.target.value })
+            }
+          />
         </td>
         <td>
           <input
             type="text"
             placeholder="Role"
             value={newPointEntry.volunteerRole}
+            onChange={(e) =>
+              setNewPointEntry({
+                ...newPointEntry,
+                volunteerRole: e.target.value,
+              })
+            }
           />
         </td>
         <td>
@@ -47,13 +71,19 @@ function PointEntriesForm() {
             type="text"
             placeholder="Points"
             value={newPointEntry.points}
+            onChange={(e) =>
+              setNewPointEntry({
+                ...newPointEntry,
+                points: parseInt(e.target.value),
+              })
+            }
           />
         </td>
       </tr>
 
       <tr>
         <td>
-          <input type="submit" name="Submit" />
+          <input type="submit" name="Submit" onClick={submitNewPointEntry} />
         </td>
       </tr>
     </>

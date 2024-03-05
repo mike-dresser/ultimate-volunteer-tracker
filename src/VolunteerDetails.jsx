@@ -42,9 +42,9 @@ function VolunteerDetails() {
               </tr>
             </thead>
             <tbody>
-              {entries.map((entry) => {
+              {entries.map((entry, index) => {
                 return (
-                  <tr>
+                  <tr key={index}>
                     <td>{entry.date}</td>
                     <td>{entry.event}</td>
                     <td>{entry.volunteerRole}</td>
@@ -52,7 +52,10 @@ function VolunteerDetails() {
                   </tr>
                 );
               })}
-              <PointEntriesForm />
+              <PointEntriesForm
+                volunteer={volunteer}
+                setPointEntries={setPointEntries}
+              />
             </tbody>
           </table>
         </form>
