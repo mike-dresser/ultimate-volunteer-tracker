@@ -54,7 +54,7 @@ function VolunteerDetails() {
               })}
               <PointEntriesForm
                 volunteer={volunteer}
-                setPointEntries={setPointEntries}
+                renderEntries={renderEntries}
               />
             </tbody>
           </table>

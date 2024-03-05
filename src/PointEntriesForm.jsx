@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function PointEntriesForm({ volunteer, setPointEntries }) {
+function PointEntriesForm({ volunteer, renderEntries }) {
   const [newPointEntry, setNewPointEntry] = useState({
     date: '',
     event: '',
@@ -20,7 +20,8 @@ function PointEntriesForm({ volunteer, setPointEntries }) {
     })
       .then((res) => res.json())
       .then((updatedRecord) => {
-        setPointEntries([...updatedRecord.pointEntries]);
+        console.log(updatedRecord.pointEntries);
+        renderEntries(updatedRecord.pointEntries);
         setNewPointEntry({
           date: '',
           event: '',
