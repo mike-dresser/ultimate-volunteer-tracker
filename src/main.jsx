@@ -10,6 +10,7 @@ import {
 import VolunteerForm from './VolunteerForm.jsx';
 import VolunteerDetails from './VolunteerDetails.jsx';
 import VolunteerGrid from './VolunteerGrid.jsx';
+import Landing from './Landing.jsx';
 
 function Main() {
   const routes = createBrowserRouter([
@@ -17,9 +18,10 @@ function Main() {
       path: '/',
       element: <App />,
       children: [
+        { path: '/', element: <Landing /> },
         { path: '/form', element: <VolunteerForm /> },
         { path: '/volunteer/:id', element: <VolunteerDetails /> },
-        { path: '/', element: <VolunteerGrid />}
+        { path: '/volunteers', element: <VolunteerGrid /> },
       ],
     },
     ,

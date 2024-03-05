@@ -69,30 +69,6 @@
           "event": "N/A",
           "volunteerRole": "Bookkeeper",
           "points": 30
-        },
-        {
-          "date": "2/14",
-          "event": "VD Fling",
-          "volunteerRole": "Coach",
-          "points": 10
-        },
-        {
-          "date": "1/23",
-          "event": "abc",
-          "volunteerRole": "a",
-          "points": 0
-        },
-        {
-          "date": "4/30",
-          "event": "def",
-          "volunteerRole": "j",
-          "points": 0
-        },
-        {
-          "date": "6/1",
-          "event": "lkjg",
-          "volunteerRole": "j",
-          "points": 0
         }
       ]
     },
