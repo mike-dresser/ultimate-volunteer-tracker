@@ -20,7 +20,8 @@ function PointEntriesForm({ volunteer, setPointEntries }) {
     })
       .then((res) => res.json())
       .then((updatedRecord) => {
-        setPointEntries([...updatedRecord.pointEntries]);
+        console.log(updatedRecord.pointEntries);
+        setPointEntries(updatedRecord.pointEntries);
         setNewPointEntry({
           date: '',
           event: '',

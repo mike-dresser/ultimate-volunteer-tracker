@@ -25,7 +25,11 @@ function VolunteerGrid() {
           <VolunteerCard key={volunteer.id} volunteer={volunteer} />
         ))}
       </div>
-      <VolunteerDetails volunteerDetail={searchedVolunteers[0]} />
+      {volunteers.length > 0 ? (
+        <VolunteerDetails volunteerDetail={searchedVolunteers[0]} />
+      ) : (
+        <p>Loading...</p>
+      )}
     </>
   );
 }

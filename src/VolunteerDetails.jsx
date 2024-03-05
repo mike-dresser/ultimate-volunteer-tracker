@@ -1,35 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PointEntriesForm from './PointEntriesForm';
 
 function VolunteerDetails({ volunteerDetail }) {
-  const [volunteer, setVolunteer] = useState(volunteerDetail);
-  const [pointEntries, setPointEntries] = useState([]);
+  console.log(volunteerDetail);
+  const { name, pronouns, image, role, email } = volunteerDetail;
+  const [pointEntries, setPointEntries] = useState(
+    volunteerDetail.pointEntries
+  );
 
-  const { name, pronouns, image, role, email, total } = volunteerDetail;
-
-  pointTotal(volunteer);
-  renderEntries(volunteer.pointEntries);
-  function renderDetails(volunteer) {
-    entries.map((entry, index) => {
-      return (
-        <tr key={index}>
-          <td>{entry.date}</td>
-          <td>{entry.event}</td>
-          <td>{entry.volunteerRole}</td>
-          <td>{entry.points}</td>
-        </tr>
-      );
-    });
-  }
-  function pointTotal(volunteer) {
-    let total = volunteer.pointEntries.reduce((total, entry) => {
-      return total + entry.points;
-    }, 0);
-    setVolunteer({ ...volunteer, total: total });
-  }
+  // renderEntries(volunteerDetail.pointEntries);
 
   function renderEntries(entries) {
-    const result = (
+    return (
       <form>
         <table>
           <thead>
@@ -41,16 +23,24 @@ function VolunteerDetails({ volunteerDetail }) {
             </tr>
           </thead>
           <tbody>
-            {renderDetails()}
+            {entries.map((entry, index) => {
+              return (
+                <tr key={index}>
+                  <td>{entry.date}</td>
+                  <td>{entry.event}</td>
+                  <td>{entry.volunteerRole}</td>
+                  <td>{entry.points}</td>
+                </tr>
+              );
+            })}
             <PointEntriesForm
-              volunteer={volunteer}
+              volunteer={volunteerDetail}
               setPointEntries={setPointEntries}
             />
           </tbody>
         </table>
       </form>
     );
-    setPointEntries(result);
   }
 
   return (
@@ -62,8 +52,13 @@ function VolunteerDetails({ volunteerDetail }) {
       </p>
       <p>{pronouns}</p>
       <p>{email}</p>
-      <p className="points">{total} pts</p>
-      <div className="pointEntries">{pointEntries}</div>
+      <p className="points">
+        {volunteerDetail.pointEntries.reduce((total, entry) => {
+          return total + entry.points;
+        }, 0)}{' '}
+        pts
+      </p>
+      <div className="pointEntries">{renderEntries(pointEntries)}</div>
     </div>
   );
 }
