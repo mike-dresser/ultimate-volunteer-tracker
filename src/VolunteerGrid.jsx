@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import VolunteerCard from './VolunteerCard';
 import Search from './Search';
+import VolunteerDetails from './VolunteerDetails';
 
 function VolunteerGrid() {
   const [search, setSearch] = useState('');
@@ -24,6 +25,7 @@ function VolunteerGrid() {
           <VolunteerCard key={volunteer.id} volunteer={volunteer} />
         ))}
       </div>
+      <VolunteerDetails volunteerDetail={searchedVolunteers[0]} />
     </>
   );
 }

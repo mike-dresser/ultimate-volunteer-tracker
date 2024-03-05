@@ -1,67 +1,56 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
 import PointEntriesForm from './PointEntriesForm';
 
-function VolunteerDetails() {
-  const { id } = useParams();
-  const [volunteer, setVolunteer] = useState({});
+function VolunteerDetails({ volunteerDetail }) {
+  const [volunteer, setVolunteer] = useState(volunteerDetail);
   const [pointEntries, setPointEntries] = useState([]);
 
-  const { name, pronouns, image, role, email, total } = volunteer;
+  const { name, pronouns, image, role, email, total } = volunteerDetail;
 
-  useEffect(() => {
-    fetch(`http://localhost:3000/users/${id}`)
-      .then((res) => res.json())
-      .then((volunteerDetails) => {
-        renderDetails(volunteerDetails);
-      });
-  }, []);
-
+  pointTotal(volunteer);
+  renderEntries(volunteer.pointEntries);
   function renderDetails(volunteer) {
-    setVolunteer(volunteer);
-    pointTotal(volunteer);
-    renderEntries(volunteer.pointEntries);
-
-    function pointTotal(volunteer) {
-      let total = volunteer.pointEntries.reduce((total, entry) => {
-        return total + entry.points;
-      }, 0);
-      setVolunteer({ ...volunteer, total: total });
-    }
-
-    function renderEntries(entries) {
-      const result = (
-        <form>
-          <table>
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Event</th>
-                <th>Role</th>
-                <th>Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {entries.map((entry, index) => {
-                return (
-                  <tr key={index}>
-                    <td>{entry.date}</td>
-                    <td>{entry.event}</td>
-                    <td>{entry.volunteerRole}</td>
-                    <td>{entry.points}</td>
-                  </tr>
-                );
-              })}
-              <PointEntriesForm
-                volunteer={volunteer}
-                setPointEntries={setPointEntries}
-              />
-            </tbody>
-          </table>
-        </form>
+    entries.map((entry, index) => {
+      return (
+        <tr key={index}>
+          <td>{entry.date}</td>
+          <td>{entry.event}</td>
+          <td>{entry.volunteerRole}</td>
+          <td>{entry.points}</td>
+        </tr>
       );
-      setPointEntries(result);
-    }
+    });
+  }
+  function pointTotal(volunteer) {
+    let total = volunteer.pointEntries.reduce((total, entry) => {
+      return total + entry.points;
+    }, 0);
+    setVolunteer({ ...volunteer, total: total });
+  }
+
+  function renderEntries(entries) {
+    const result = (
+      <form>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Role</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            {renderDetails()}
+            <PointEntriesForm
+              volunteer={volunteer}
+              setPointEntries={setPointEntries}
+            />
+          </tbody>
+        </table>
+      </form>
+    );
+    setPointEntries(result);
   }
 
   return (
