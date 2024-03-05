@@ -1,38 +1,37 @@
-import React from 'react'
-import {useNavigate} from 'react-router-dom'
+import React from 'react';
+import VolunteerDetails from './VolunteerDetails';
 
-function VolunteerCard({volunteer}) {
+function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
+  const { name, pronouns, image, role, email, total } = volunteer;
 
-    const { name, pronouns, image, role, email, total } = volunteer;
-    const navigate = useNavigate()
-    
-    function showCard(id) {
-      navigate(`/volunteer/${id}`)
+  function showCard(id) {
+    setShowDetails(id);
+  }
 
-      console.log(id)
-    }
-    
-    function pointTotal(volunteer) {
-        let total = volunteer.pointEntries.reduce((total, entry) => {
-          return total + entry.points;
-        }, 0);
-        volunteer.total = total
-      }
+  function pointTotal(volunteer) {
+    let total = volunteer.pointEntries.reduce((total, entry) => {
+      return total + entry.points;
+    }, 0);
+    volunteer.total = total;
+  }
 
-      pointTotal(volunteer)
+  pointTotal(volunteer);
 
-  return ( 
-    <div onClick={()=> showCard(volunteer.id)} className="volunteerCard" >
-        <div className='imageFrame'><img src={image} alt={name} /></div>
+  return (
+    <div onClick={() => showCard(volunteer.id)} className="volunteerCard">
+      <div className="imageFrame">
+        <img src={image} alt={name} />
+      </div>
+      <div className="details">
         <h2>{name}</h2>
-        <p>
-            <em>{role}</em>
-        </p>
-        <p>{pronouns}</p>
-        <p>{email}</p>
+        <em>{role}</em>
+        <br />
+        {pronouns} <br />
+        {email} <br />
         <p className="score">{total} pts</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default VolunteerCard
+export default VolunteerCard;
