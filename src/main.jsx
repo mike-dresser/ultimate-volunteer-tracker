@@ -11,9 +11,12 @@ function Main() {
   const routes = createBrowserRouter([
     {
       path: '/',
+      element: <Landing />,
+    },
+    {
+      path: '/',
       element: <App />,
       children: [
-        { path: '/', element: <Landing /> },
         { path: '/form', element: <VolunteerForm /> },
         { path: '/volunteers', element: <VolunteerGrid /> },
       ],
