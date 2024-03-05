@@ -47,13 +47,18 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
         <span className="closeButton" onClick={() => setShowDetails(-1)}>
           ✖️
         </span>
-        <img src={image} alt={name} />
-        <h2>{name}</h2>
-        <p>
-          <em>{role}</em>
-        </p>
-        <p>{pronouns}</p>
-        <p>{email}</p>
+        <div className="detailsTop">
+          <div>
+            <h2>{name}</h2>
+            <p>
+              <em>{role}</em>
+            </p>
+            <p>{pronouns}</p>
+            <p>{email}</p>
+          </div>
+
+          <img src={image} alt={name} />
+        </div>
         <p className="points">
           {volunteerDetail.pointEntries.reduce((total, entry) => {
             return total + entry.points;

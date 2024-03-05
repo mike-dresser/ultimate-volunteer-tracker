@@ -22,13 +22,14 @@ function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
       <div className="imageFrame">
         <img src={image} alt={name} />
       </div>
-      <h2>{name}</h2>
-      <p>
+      <div className="details">
+        <h2>{name}</h2>
         <em>{role}</em>
-      </p>
-      <p>{pronouns}</p>
-      <p>{email}</p>
-      <p className="score">{total} pts</p>
+        <br />
+        {pronouns} <br />
+        {email} <br />
+        <p className="score">{total} pts</p>
+      </div>
     </div>
   );
 }
