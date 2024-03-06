@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   margin: 0;
   padding: 0;
   position: relative;
+}
+
+button {
+  background-color: #E9EDC9;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-width: 1px;
+  padding: 5px 20px;
+  border-radius: 7px;
+  border-color: #D4A373;
+  color:#773e06;
+  font-weight: 550;
+}
+
+button :hover {
+  background-color: #CCD5AE;
 }
 
 header {
@@ -190,7 +214,6 @@ img {
   width: 100%;
   color: white;
   font-size: xx-large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .landingText button {
