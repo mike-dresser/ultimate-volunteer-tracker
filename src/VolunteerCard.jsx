@@ -20,7 +20,14 @@ function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
   return (
     <div onClick={() => showCard(volunteer.id)} className="volunteerCard">
       <div className="imageFrame">
-        <img src={image} alt={name} />
+        <img
+          src={image}
+          onError={({ currentTarget }) => {
+            currentTarget.src =
+              '/src/assets/person_FILL0_wght400_GRAD0_opsz24.svg';
+          }}
+          alt={name}
+        />
       </div>
       <div className="details">
         <h2>{name}</h2>
