@@ -11,7 +11,7 @@ function Header({ loggedIn, setLoggedIn }) {
         <img className="gridIcon" src="/src/assets/gridIcon.png" alt="grid view" />
       </Link>
       {loggedIn ? (
-        <div>
+        <div className='signIn'>
           <span>Welcome, Syd! </span>
           <br />
           <button onClick={() => navigate('./form')}>Add New Volunteer</button>
