@@ -22,10 +22,13 @@ button {
   border-color: #D4A373;
   color:#773e06;
   font-weight: 550;
+  transition: background-color 0.25s ease;
 }
 
-button :hover {
-  background-color: #CCD5AE;
+button:hover {
+  background-color: #D4A373;
+  border-color: #E9EDC9;
+  border: 3px;
 }
 
 header {
@@ -212,21 +215,47 @@ img {
   position: absolute;
   top: 10vh;
   width: 100%;
-  color: white;
+  color: #D4A373;
   font-size: xx-large;
 }
 
+.landingText h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 125px;
+}
+
+.landingText p {
+  margin-top: 0;
+  font-size: 50px;
+  font-weight: 500;
+}
+
 .landingText button {
+  background-color: #e9edc9ab;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   width: 200px;
   margin: 20px auto;
   border-style: none;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.545);
   border-radius: 20px;
   color: white;
   font-weight: 700;
   font-size: 24px;
   cursor: pointer;
+  border-color: #D4A373;
+  color: #d28a41;
+  font-weight: 550;
+  transition: background-color 0.25s ease;
+  margin-top: 250px;
+}
+
+.landingText button:hover {
+  background-color: #d2ad87c5;
+  border-color: #E9EDC9;
+  border: 3px;
 }
 
 .video {
