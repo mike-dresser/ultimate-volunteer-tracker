@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PointEntriesForm from './PointEntriesForm';
-import { useOutletContext } from 'react-router-dom';
+import { Link, useNavigate, useOutletContext } from 'react-router-dom';
 
 function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
   const [loggedIn, setLoggedIn] = useOutletContext();
-  const { name, pronouns, image, role, email } = volunteerDetail;
+  const { id, name, pronouns, image, role, email } = volunteerDetail;
   const [pointEntries, setPointEntries] = useState(
     volunteerDetail.pointEntries
   );
@@ -53,6 +53,14 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
     if (e.target.className === 'closeButton' || e.target.className === 'modal')
       setShowDetails(-1);
   }
+  const navigate = useNavigate();
+
+  function deleteVolunteer() {
+    fetch(`http://localhost:3000/users/${id}`, {
+      method: 'DELETE',
+    });
+    window.location.href = '/volunteers';
+  }
 
   return (
     <div
@@ -71,6 +79,7 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
             </p>
             <p>{pronouns}</p>
             <p>{email}</p>
+            <button onClick={deleteVolunteer}>Delete Volunteer</button>
           </div>
 
           <img
