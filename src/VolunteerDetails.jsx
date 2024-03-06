@@ -44,10 +44,19 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
     );
   }
 
+  function closeDetails(e) {
+    e.stopPropagation();
+    if (e.target.className === 'closeButton' || e.target.className === 'modal')
+      setShowDetails(-1);
+  }
+
   return (
-    <div className={showDetails === -1 ? 'modal hidden' : 'modal'}>
+    <div
+      className={showDetails === -1 ? 'modal hidden' : 'modal'}
+      onClick={closeDetails}
+    >
       <div className="volunteerDetails">
-        <span className="closeButton" onClick={() => setShowDetails(-1)}>
+        <span className="closeButton" onClick={closeDetails}>
           ✖️
         </span>
         <div className="detailsTop">
