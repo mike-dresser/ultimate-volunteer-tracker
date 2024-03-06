@@ -96,6 +96,7 @@ footer img {
   border: 1px solid darkgrey;
   background-color: white;
   position: relative;
+  border-radius: 10px;
 }
 
 .detailsTop {
