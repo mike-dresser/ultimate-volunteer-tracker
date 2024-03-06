@@ -243,8 +243,10 @@ img {
   align-self: start;
 }
 
+
+
 .landingText {
-  height: 70vh;
+  height: 55vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -252,7 +254,7 @@ img {
   position: absolute;
   top: 10vh;
   width: 100%;
-  color: #d4a373;
+  color: #c97b2c;
   font-size: xx-large;
 }
 
@@ -342,3 +344,4 @@ img {
   visibility: visible;
   opacity: 1;
 }
+
