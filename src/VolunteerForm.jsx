@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function VolunteerForm() {
   const [newVolunteer, setNewVolunteer] = useState({
@@ -9,6 +10,8 @@ function VolunteerForm() {
     email: '',
     pointEntries: [],
   });
+
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -21,9 +24,7 @@ function VolunteerForm() {
         'Content-Type': 'Application/JSON',
       },
       body: JSON.stringify(newVolunteer),
-    });
-    //     .then((res)=>res.json())
-    //     .then((data)=>setNewVolunteer([...newVolunteer, data]));
+    }).then(() => navigate('/volunteers'));
   }
 
   return (
@@ -32,6 +33,7 @@ function VolunteerForm() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Full Name </label>
         <input
+          required
           type="text"
           name="name"
           placeholder="Johnny Disc"
@@ -65,6 +67,7 @@ function VolunteerForm() {
 
         <label htmlFor="email">Email </label>
         <input
+          required
           type="text"
           name="email"
           placeholder="johnny.disc@discny.org"
