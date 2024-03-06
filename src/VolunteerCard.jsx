@@ -1,5 +1,4 @@
 import React from 'react';
-import VolunteerDetails from './VolunteerDetails';
 
 function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
   const { name, pronouns, image, role, email, total } = volunteer;
@@ -30,7 +29,7 @@ function VolunteerCard({ volunteer, setShowDetails, showDetails }) {
         />
       </div>
       <div className="details">
-        <h2>{name}</h2>
+        <h2 className={name.length > 17 ? 'small' : ''}>{name}</h2>
         <em>{role}</em>
         <br />
         {pronouns} <br />
