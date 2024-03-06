@@ -22,16 +22,20 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
             </tr>
           </thead>
           <tbody>
-            {entries.map((entry, index) => {
-              return (
-                <tr key={index}>
-                  <td>{entry.date}</td>
-                  <td>{entry.event}</td>
-                  <td>{entry.volunteerRole}</td>
-                  <td>{entry.points}</td>
-                </tr>
-              );
-            })}
+            {entries.length ? (
+              entries.map((entry, index) => {
+                return (
+                  <tr key={index}>
+                    <td>{entry.date}</td>
+                    <td>{entry.event}</td>
+                    <td>{entry.volunteerRole}</td>
+                    <td>{entry.points}</td>
+                  </tr>
+                );
+              })
+            ) : (
+              <em>No events added yet!</em>
+            )}
             {loggedIn && (
               <PointEntriesForm
                 volunteer={volunteerDetail}
@@ -69,7 +73,14 @@ function VolunteerDetails({ volunteerDetail, showDetails, setShowDetails }) {
             <p>{email}</p>
           </div>
 
-          <img src={image} alt={name} />
+          <img
+            src={image}
+            onError={({ currentTarget }) => {
+              currentTarget.src =
+                '/src/assets/person_FILL0_wght400_GRAD0_opsz24.svg';
+            }}
+            alt={name}
+          />
         </div>
         <p className="points">
           {volunteerDetail.pointEntries.reduce((total, entry) => {
