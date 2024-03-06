@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: #FEFAE0;
 }
 
 button {
@@ -145,19 +146,18 @@ tr:nth-child(even) {
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
-
   height: 80vh;
-
   gap: 10px;
   margin: auto;
   justify-content: space-evenly;
   overflow: scroll;
+  background-color: #FEFAE0;
 }
 
 .volunteerCard {
   width: 20vw;
   max-height: 58vh;
-  background-color: rgba(0, 30, 255, 0.117);
+  background-color: #CCD5AE;
   cursor: pointer;
 }
 
