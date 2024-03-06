@@ -227,3 +227,25 @@ img {
   border-radius: 7px;
   border-style: solid;
 }
+
+.tooltipContainer {
+  position: relative;
+}
+
+.tooltipText {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s;
+  position: absolute;
+  top: -4em;
+  background-color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tooltipContainer:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
