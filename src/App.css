@@ -62,7 +62,6 @@ footer img {
   height: 4vh;
   padding: 0 5px;
   text-align: center;
-  
 }
 
 .search input {
@@ -71,8 +70,8 @@ footer img {
   width: 40vw;
   height: 3vh;
   margin-right: 15px;
-  background-color: #E9EDC9;
-  font-family: "Montserrat", sans-serif;
+  background-color: #e9edc9;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   padding: 5px 15px;
@@ -156,9 +155,8 @@ tr:nth-child(even) {
   justify-content: space-evenly;
   overflow: scroll;
 
-  background-color: #FEFAE0;
+  background-color: #fefae0;
   padding: 10px 0 10px;
-
 }
 
 .volunteerCard {
@@ -169,6 +167,11 @@ tr:nth-child(even) {
   border-radius: 30px;
   transition: transform 0.1s ease;
   border: 2px solid #86935c;
+}
+
+h2.small {
+  font-size: 1.2em;
+  line-height: 1.75em;
 }
 
 .volunteerCard:hover {
