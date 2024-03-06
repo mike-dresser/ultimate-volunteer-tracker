@@ -20,8 +20,8 @@ function VolunteerGrid() {
 
   return (
     <>
-      <Search search={search} setSearch={setSearch} />
       <div className="volunteerGrid">
+      <Search search={search} setSearch={setSearch} />
         {searchedVolunteers.map((volunteer) => (
           <VolunteerCard
             key={volunteer.id}

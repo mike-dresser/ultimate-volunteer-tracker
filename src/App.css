@@ -35,14 +35,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 15px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 2px solid #86935c;
   height: 10vh;
+  background-color: #d1aa83e4;
 }
 
-header img {
-  max-height: 5vh;
-  max-width: 3vw;
-}
+
 
 footer {
   height: 10vh;
@@ -50,7 +48,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 20vw;
-  background-color: darkgrey;
+  background-color: #d1aa83e4;
+  border-top: 2px solid #86935c;
 }
 
 footer img {
@@ -60,17 +59,24 @@ footer img {
 .search {
   display: block;
   margin: 20px auto;
-  width: 40vw;
+  width: 100vw;
   height: 4vh;
   padding: 0 5px;
+  text-align: center;
+  
 }
 
 .search input {
   border-radius: 10px;
-  border: 2px solid darkgray;
-  width: 100%;
+  border: 2px solid #86935c;
+  width: 40vw;
   height: 3vh;
   margin-right: 15px;
+  background-color: #E9EDC9;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 5px 15px;
 }
 
 .modal {
@@ -80,12 +86,13 @@ footer img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .volunteerDetails {
-  margin: 10vh auto;
+  margin: 5vh auto;
   width: 60vw;
-  height: 80vh;
+  height: 85vh;
   overflow: scroll;
   padding: 1em;
   border: 1px solid darkgrey;
@@ -144,12 +151,15 @@ tr:nth-child(even) {
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
-  height: 80vh;
-  gap: 10px;
+  height: 78vh;
+  gap: 40px 10px;
   margin: auto;
   justify-content: space-evenly;
   overflow: scroll;
-  background-color: #fefae0;
+
+  background-color: #FEFAE0;
+  padding: 10px 0 10px;
+
 }
 
 .volunteerCard {
@@ -157,6 +167,13 @@ tr:nth-child(even) {
   max-height: 58vh;
   background-color: #ccd5ae;
   cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.1s ease;
+  border: 2px solid #86935c;
+}
+
+.volunteerCard:hover {
+  transform: scale(1.01);
 }
 
 .details {
@@ -171,6 +188,8 @@ img {
 .imageFrame {
   max-height: 30vh;
   overflow: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .score {
@@ -297,11 +316,15 @@ img {
   transition: opacity 0.25s;
   position: absolute;
   top: -4em;
+  left: -1em;
   background-color: white;
   font-weight: 500;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+  background-color: #cfd6b8c5;
+  border: 2px solid #86935ca7;
+  font-size: smaller;
 }
 
 .tooltipContainer:hover .tooltipText {

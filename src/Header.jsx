@@ -6,8 +6,9 @@ function Header({ loggedIn, setLoggedIn }) {
   const navigate = useNavigate();
   return (
     <header>
+
       <Link to="volunteers">
-        <img src="/src/assets/home icon.webp" alt="home" />
+        <img className="gridIcon" src="/src/assets/gridIcon.png" alt="grid view" />
       </Link>
       {loggedIn ? (
         <div>
