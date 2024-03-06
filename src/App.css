@@ -34,12 +34,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 30px;
   border-bottom: 2px solid #86935c;
   height: 10vh;
   background-color: #d1aa83e4;
 }
-
 
 
 footer {
@@ -200,7 +199,7 @@ img {
 
 .newVolunteer {
   width: 80%;
-  height: 80vh;
+  height: 77vh;
   margin: auto;
   text-align: center;
 }
@@ -215,6 +214,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #CCD5AE;
 }
 
 .newVolunteer input[type='text'] {
@@ -225,6 +225,14 @@ img {
   font-size: 1em;
   border-radius: 7px;
   border-width: 1px;
+  background-color: #eeefe7;
+}
+
+.newVolunteer button[type='submit'] {
+  height: 50px;
+  border-radius: 20px;
+  width: 170px;
+  font-size: medium;
 }
 
 .newVolunteer label {
