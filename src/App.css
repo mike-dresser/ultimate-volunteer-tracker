@@ -40,6 +40,15 @@ header {
   background-color: #d1aa83e4;
 }
 
+a {
+  color: rgb(0, 55, 0);
+}
+
+.discnyLogo {
+  height: 80%;
+  width: auto;
+}
+
 footer {
   height: 10vh;
   display: flex;
@@ -52,6 +61,8 @@ footer {
 
 footer img {
   max-height: 5vh;
+  max-width: 65px;
+  filter: grayscale(15%);
 }
 
 .search {
