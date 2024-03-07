@@ -40,7 +40,6 @@ header {
   background-color: #d1aa83e4;
 }
 
-
 footer {
   height: 10vh;
   display: flex;
@@ -95,7 +94,7 @@ footer img {
   overflow: scroll;
   padding: 1em;
   border: 1px solid darkgrey;
-  background-color: #FEFAE0;
+  background-color: #fefae0;
   position: relative;
   border-radius: 10px;
   border: 2px solid #86935c;
@@ -107,7 +106,7 @@ footer img {
   padding: 0 10px;
 }
 
-.detailsTop img  {
+.detailsTop img {
   border-radius: 10px;
 }
 
@@ -141,7 +140,6 @@ footer img {
 }
 
 table {
-  border: 1px solid black;
   width: 100%;
 }
 
@@ -150,15 +148,26 @@ td {
 }
 
 th {
-  background-color: #CCD5AE;
+  background-color: #ccd5ae;
 }
 
 tr:nth-child(even) {
-  background-color: #CCD5AE;
+  background-color: #ccd5ae;
 }
 
 tr:nth-child(odd) {
-  background-color: #E9EDC9;
+  background-color: #e9edc9;
+}
+
+.pointsField {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pointsField span {
+  opacity: 0.5;
+  cursor: pointer;
+  margin-right: 3px;
 }
 
 .volunteerGrid {
@@ -233,7 +242,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #CCD5AE;
+  background-color: #ccd5ae;
 }
 
 .newVolunteer input[type='text'] {
@@ -258,7 +267,6 @@ img {
   font-weight: 600;
   align-self: start;
 }
-
 
 .landingText {
   height: 70vh;
@@ -336,6 +344,7 @@ img {
 
 .tooltipContainer {
   position: relative;
+  cursor: pointer;
 }
 
 .tooltipText {
@@ -346,7 +355,7 @@ img {
   top: -4em;
   left: -1em;
   background-color: white;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
@@ -359,4 +368,3 @@ img {
   visibility: visible;
   opacity: 1;
 }
-
