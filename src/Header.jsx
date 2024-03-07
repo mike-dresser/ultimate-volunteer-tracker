@@ -10,6 +10,7 @@ function Header({ loggedIn, setLoggedIn }) {
       <Link to="volunteers">
         <img className="gridIcon" src="/src/assets/gridIcon.png" alt="grid view" />
       </Link>
+      <img className="discnyLogo" src="/src/assets/DiscNY Skyline.png" alt="DiscNY Logo" />
       {loggedIn ? (
         <div className='signIn'>
           <span>Welcome, Syd! </span>

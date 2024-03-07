@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <FooterItem
         url="https://discny.org/"
-        imgSrc="/src/assets/discnyny.png"
+        imgSrc="/src/assets/DiscNY Skyline BW.png"
         hoverText="DiscNY Homepage"
       />
       <FooterItem
@@ -17,7 +17,7 @@ function Footer() {
       />
       <FooterItem
         url="https://linktr.ee/discny"
-        imgSrc="/src/assets/linktree.png"
+        imgSrc="/src/assets/linktree-logo-icon.png"
         hoverText="linktr"
       />
       <FooterItem
